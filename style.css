@@ -7,13 +7,13 @@
 body {
     text-align: center;
     font-family: Arial, sans-serif;
-    margin: 20px 300px 0 300px;
+    margin: 20px auto;
     font-size: small;
 }
 
 p {
     color: gray;
-    margin-top: 10px;
+    margin: 10px 5px 0 0;
 }
 
 form {
@@ -24,7 +24,7 @@ form div {
     background-color: gray;
     border-radius: 16px;
     padding: 10px;
-    width: 50%;
+    width: 80%;
     margin: 10px auto;
 }
 
@@ -38,16 +38,12 @@ form div input {
     background-color: gray;
 }
 
-form div i {
-    margin-right: 10px;
-}
-
 input[type="submit"] {
     background-color: blue;
     color: white;
     cursor: pointer;
-    width: 50%;
-    margin: 5px 0;
+    width: 80%;
+    margin: 5px auto;
     border-radius: 16px;
     border: none;
     padding: 15px;
@@ -55,7 +51,18 @@ input[type="submit"] {
 
 .enlaces {
     margin: 0 auto;
-    width: 40%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
+}
+
+@media only screen and (min-width: 601px) {
+    /*Tablets*/
+    body {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    /* Aquí coloca los estilos para escritorios */
 }
